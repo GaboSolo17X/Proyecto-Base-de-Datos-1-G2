@@ -418,6 +418,7 @@ IdMensualidad     VARCHAR(10),
 IdMembresia       VARCHAR(10) NOT NULL,
 DniEmpleado       VARCHAR(8)NOT NULL,
 Dni_Cliente       VARCHAR(8) NOT NULL,
+FechaPago         DATE NOT NULL,
 
 CONSTRAINT PK_MENSUALIDAD PRIMARY KEY (IdMembresia,IdMensualidad,DniEmpleado,Dni_Cliente),
 CONSTRAINT FK_MenMem FOREIGN KEY (IdMembresia) REFERENCES MEMBRESIA(IdMembresia),
