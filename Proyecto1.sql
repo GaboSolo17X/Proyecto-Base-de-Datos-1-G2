@@ -15,7 +15,7 @@ INSERT INTO SUCURSAL VALUES ('SUC01', 'Sport Life Ventu', 'Bloque A', 'Las Casit
 INSERT INTO SUCURSAL VALUES ('SUC02', 'Sport Life Marriot','-','-', 'Bvd.Juan PabloII');
 
 SELECT*FROM SUCURSAL;
-
+--ESTE ES UN COMENTARIO DE PRUEBA
 
 --2)Creando la tabla EMPLEADO
 CREATE TABLE EMPLEADO
