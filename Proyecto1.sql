@@ -39,6 +39,48 @@ CONSTRAINT CHK_EdadEmpleado CHECK (FechaNac<'01-JAN-2003'),
 CONSTRAINT FK_EmpSucu FOREIGN KEY (IdSucursal) REFERENCES SUCURSAL(Id_Sucursal)
 )
 
+------------------------------ Insert de los empleados --------------------------------------------------------------------------
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08010355', 'Melantha', 'Arlie', 'Fowley', 'Northgraves', 'F', '11/02/1986', '988-135-1476', '5 Buhler Crossing', '18/05/2021', 'Gerente', 'Permanente', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08017954', 'Ingrim', 'Gregoire', 'Tremblett', 'Ainsworth', 'F', '27/10/1994', '923-662-0582', '005 Jana Point', '10/02/2021', 'Gerente', 'Permanente', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08012795', 'Lissa', 'Rahel', 'Fer', 'Nortunen', 'F', '30/09/1992', '505-994-7969', '87 Weeping Birch Drive', '10/07/2021', 'Gerente', 'Permanente', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08018007', 'Sheeree', 'Mollie', 'McCourtie', 'Goring', 'F', '19/04/1992', '481-354-8761', '66423 Veith Plaza', '02/06/2021', 'Mantenimi', 'Permanente', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08017137', 'Say', 'Hagen', 'Greenhowe', 'Camelia', 'M', '16/11/1987', '201-185-8041', '822 Declaration Street', '12/12/2021', 'Mantenimi', 'Permanente', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08014635', 'Garvey', 'Decca', 'Lovelock', 'Chaim', 'M', '14/08/1992', '662-301-2355', '19 Swallow Alley', '15/05/2021', 'Mantenimi', 'Permanente', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08012274', 'Kaylil', 'Quintana', 'Insull', 'Duling', 'F', '30/06/1996', '669-142-6015', '5 Sunnyside Court', '05/01/2021', 'Instructor', 'Contrato', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08019211', 'Vilhelmina', 'Brandi', 'Bracco', 'Ellse', 'F', '23/01/1998', '501-883-3910', '523 Duke Street', '29/12/2021', 'Instructor', 'Contrato', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08011022', 'Rene', 'Ewell', 'Guitt', 'Richin', 'M', '18/10/1999', '820-180-4921', '58884 Loomis Avenue', '13/04/2021', 'Instructor', 'Contrato', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08017242', 'Bunny', 'Jami', 'Moncreiff', 'Kivell', 'F', '31/07/1992', '243-550-7246', '8 North Avenue', '10/09/2021', 'Instructor', 'Contrato', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08014366', 'Lorenzo', 'Bent', 'Duncklee', 'Chastey', 'M', '26/07/1988', '638-356-3704', '415 Bunting Circle', '29/04/2021', 'Instructor', 'Contrato', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08015953', 'Skip', 'Allissa', 'Kitchiner', 'Mallinar', 'M', '26/06/1991', '790-275-4410', '08790 Algoma Junction', '23/07/2021', 'Instructor', 'Contrato', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08012085', 'Garner', 'Inger', 'Arnaudin', 'Leonardi', 'M', '12/04/1992', '250-479-5530', '851 Dottie Point', '14/04/2021', 'Instructor', 'Contrato', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08012932', 'Devi', 'Sascha', 'Monery', 'Van der Beek', 'F', '26/12/1996', '197-817-5442', '339 Westport Court', '03/02/2021', 'Instructor', 'Contrato', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08018255', 'Antin', 'Winny', 'Hannay', 'Pybworth', 'M', '23/12/1991', '133-365-5018', '13957 Hudson Road', '26/06/2021', 'Recepcion', 'Contrato', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08017383', 'Ody', 'Demetri', 'Furbank', 'Rylatt', 'M', '20/04/1993', '925-230-3565', '877 Bayside Alley', '10/01/2021', 'Recepcion', 'Contrato', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08013535', 'Shirlee', 'Arliene', 'Mitrikhin', 'Ottewell', 'F', '08/09/2000', '311-149-4407', '30191 Talmadge Hill', '01/12/2021', 'Masajista', 'Contrato', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08016512', 'Nicoline', 'Ingaborg', 'Morcom', 'Whittlesee', 'F', '11/01/1996', '958-418-8986', '25 Cottonwood Place', '03/01/2021', 'Masajista', 'Contrato', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08019019', 'Emilio', 'George', 'Tremble', 'Tuttle', 'M', '08/05/1986', '302-254-6920', '192 Stephen Parkway', '05/05/2021', 'Personal a', 'Contrato', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08010976', 'Inger', 'Eberto', 'McIllrick', 'Burnsyde', 'M', '29/01/1991', '327-669-1655', '62 Golf Terrace', '01/07/2021', 'Personal a', 'Contrato', 'SUC01');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08059328', 'Lawry', 'Odey', 'Gruszczak', 'Peinke', 'M', '25/03/1990', '337-263-4395', '92 Shelley Plaza', '11/06/2021', 'Gerente', 'Permanente', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08055137', 'Faustine', 'Gwynne', 'Scarre', 'Gothrup', 'F', '01/12/1994', '708-723-6454', '769 Acker Alley', '18/08/2021', 'Gerente', 'Permanente', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08051895', 'Virginie', 'Miguelita', 'McInulty', 'Balfre', 'F', '18/12/1990', '238-374-3536', '137 Cardinal Terrace', '04/08/2021', 'Gerente', 'Permanente', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08052981', 'Alford', 'Patrizius', 'Hurleston', 'Kemetz', 'M', '08/07/1989', '940-982-0399', '14152 Redwing Road', '15/07/2021', 'Mantenimi', 'Permanente', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08054529', 'Dianne', 'Katerina', 'Shanks', 'March', 'F', '21/10/1989', '294-684-1814', '3763 Hoepker Street', '09/06/2021', 'Mantenimi', 'Permanente', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08051758', 'Gerrie', 'Ibbie', 'Dowty', 'Chadwell', 'F', '30/03/1999', '958-767-1350', '2505 Merrick Trail', '26/05/2021', 'Mantenimi', 'Permanente', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08050535', 'Hedi', 'Retha', 'Issacov', 'Haet', 'F', '10/04/1986', '347-295-1163', '56869 Evergreen Road', '28/10/2021', 'Instructor', 'Contrato', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08059688', 'Vale', 'Kale', 'Bythway', 'Moulding', 'M', '16/03/2000', '178-150-1956', '5 Springview Center', '07/05/2021', 'Instructor', 'Contrato', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08057257', 'Drucie', 'Cariotta', 'Spadeck', 'Gobourn', 'F', '19/09/1994', '102-842-0924', '8548 Shelley Place', '31/12/2021', 'Instructor', 'Contrato', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('08056509', 'Olivero', 'Elston', 'Pere', 'Martina', 'M', '11/03/1986', '133-829-4719', '87141 Annamark Place', '30/07/2021', 'Instructor', 'Contrato', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('00177875', 'Jeralee', 'Maighdiln', 'Goard', 'Pepperell', 'F', '30/12/1996', '951-944-8824', '99 Springs Plaza', '14/03/2021', 'Instructor', 'Contrato', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('18310799', 'Sophi', 'Joellyn', 'Kmiec', 'Gulland', 'F', '12/06/1992', '626-519-9743', '2475 Graceland Road', '20/07/2021', 'Instructor', 'Contrato', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('94123049', 'Levin', 'Erma', 'Ilyunin', 'd''Escoffier', 'M', '07/03/1986', '537-836-9621', '42281 Village Junction', '16/01/2021', 'Instructor', 'Contrato', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('05585862', 'Amara', 'Shantee', 'Bonde', 'Lendrem', 'F', '26/08/1989', '618-315-8784', '530 Northwestern Parkway', '04/03/2021', 'Masajista', 'Contrato', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('28693468', 'Archibald', 'Garwin', 'Tuckerman', 'Licas', 'M', '22/09/2002', '416-874-5531', '151 Rieder Junction', '08/03/2021', 'Masajista', 'Contrato', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('32322835', 'Salem', 'Eliot', 'Madgwick', 'Freund', 'M', '02/04/1987', '409-101-4668', '007 Jay Trail', '30/12/2021', 'Masajista', 'Contrato', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('95874412', 'Malachi', 'Mikkel', 'Josephsen', 'Fawbert', 'M', '18/09/1995', '999-200-6646', '9579 Acker Park', '23/04/2021', 'Recepcion', 'Contrato', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('36051495', 'Ryon', 'Elena', 'Suffield', 'Clougher', 'M', '23/01/1988', '101-212-5446', '1 Gateway Center', '28/11/2021', 'Recepcion', 'Contrato', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('62598916', 'Noell', 'Marillin', 'Kember', 'Ranshaw', 'F', '28/05/1996', '978-866-2953', '13 Morning Park', '03/05/2021', 'Personal a', 'Contrato', 'SUC02');
+insert into EMPLEADO (DNI, Nombre1, Nombre2, Apellido1, Apellido2, Genero, FechaNac, Telefono, Direccion, FechaInicio, Tipo_Empleado, Tipo_Laboral, IdSucursal) values ('85985463', 'Brad', 'Reginald', 'Rathbone', 'Ferrick', 'M', '03/01/2002', '788-951-1619', '4 Vermont Alley', '17/05/2021', 'Personal a', 'Contrato', 'SUC02');
+---------------------------------------------------FIN DE LOS INSERT DE EMPLEADO------------------------------------------
 
 --3)Creando la tabla EMPLEADO PERMANENTE
 CREATE TABLE EMPLEADO_PERMANENTE
@@ -51,6 +93,22 @@ CONSTRAINT CHK_Salario CHECK (SalarioBase>10000),
 CONSTRAINT FK_EmpPermanente FOREIGN KEY (DNI) REFERENCES EMPLEADO(DNI)
 )
 
+----------------------------------------------------INSERT DE EMPLEADOS PERMANENTES------------------------------------
+insert into EMPLEADO_PERMANENTE values ('08010355', 18540.60);
+insert into EMPLEADO_PERMANENTE values ('08017954', 17300.90);
+insert into EMPLEADO_PERMANENTE values ('08012795', 16340.15);
+insert into EMPLEADO_PERMANENTE values ('08018007', 10250.40);
+insert into EMPLEADO_PERMANENTE values ('08017137', 10020.10);
+insert into EMPLEADO_PERMANENTE values ('08014635', 11000.10);
+
+insert into EMPLEADO_PERMANENTE values ('08059328', 17600.60);
+insert into EMPLEADO_PERMANENTE values ('08055137', 16300.90);
+insert into EMPLEADO_PERMANENTE values ('08051895', 15340.15);
+insert into EMPLEADO_PERMANENTE values ('08052981', 10100.40);
+insert into EMPLEADO_PERMANENTE values ('08054529', 10250.10);
+insert into EMPLEADO_PERMANENTE values ('08051758', 10250.10);
+----------------------------------------------------FIN DE INSERT DE EMPLEADOS PERMANENTES------------------------------------
+
 --4)Creando la tabla EMPLEADO POR CONTRATO
 CREATE TABLE EMPLEADO_POR_CONTRATO
 (
@@ -61,6 +119,36 @@ CONSTRAINT PK_EMPCON PRIMARY KEY (DNI),
 CONSTRAINT FK_EmpContrato FOREIGN KEY (DNI) REFERENCES EMPLEADO(DNI)
 )
 
+-----------------------------------------INSERT EMPLEADO_POR_CONTRATO----------------------------------------------------
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08012274', '15/01/2023');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08019211', '17/02/2023');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08011022', '09/12/2022');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08017242', '18/01/2023');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08014366', '08/10/2022');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08015953', '16/01/2023');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08012085', '09/03/2023');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08012932', '25/11/2022');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08018255', '25/04/2023');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08017383', '05/01/2023');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08013535', '02/11/2022');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08016512', '07/07/2023');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08019019', '03/07/2023');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08010976', '05/10/2022');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08050535','19/11/2022') ;
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08059688', '25/11/2022');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08057257', '07/10/2022');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('08056509', '28/10/2022');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('00177875', '24/11/2022');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('18310799', '27/11/2022');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('94123049', '10/01/2023');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('05585862', '31/08/2022');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('28693468', '18/08/2022');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('32322835', '02/11/2022');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('95874412', '20/01/2023');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('36051495', '30/08/2022');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('62598916', '15/08/2022');
+INSERT INTO EMPLEADO_POR_CONTRATO VALUES ('85985463', '04/01/2023');
+-----------------------------------------FIN DE INSERT EMPLEADO_POR_CONTRATO----------------------------------------------------
 
 --5)Creando la tabla GERENTE
 CREATE TABLE GERENTE
@@ -72,6 +160,14 @@ CONSTRAINT PK_GERENTE PRIMARY KEY (DNI),
 CONSTRAINT FK_EmpGerente FOREIGN KEY (DNI) REFERENCES EMPLEADO(DNI)
 )
 
+-----------------------------------------INSERT GERENTE----------------------------------------------------
+INSERT INTO GERENTE VALUES ('08010355', 'General');
+INSERT INTO GERENTE VALUES ('08017954', 'Finanzas');
+INSERT INTO GERENTE VALUES ('08012795', 'Ventas');
+INSERT INTO GERENTE VALUES ('08059328', 'General');
+INSERT INTO GERENTE VALUES ('08055137', 'Finanzas');
+INSERT INTO GERENTE VALUES ('08051895', 'Ventas');
+-----------------------------------------FIN DE INSERT GERENTE----------------------------------------------------
 
 --6)Creando la tabla MANTENIMIENTO
 CREATE TABLE MANTENIMIENTO
@@ -83,6 +179,14 @@ CONSTRAINT PK_MANTE PRIMARY KEY (DNI),
 CONSTRAINT FK_EmpMante FOREIGN KEY (DNI) REFERENCES EMPLEADO(DNI)
 )
 
+-----------------------------------------INSERT MANTENIMIENTO----------------------------------------------------
+INSERT INTO MANTENIMIENTO VALUES ('08018007','472-2');
+INSERT INTO MANTENIMIENTO VALUES ('08017137','905-3');
+INSERT INTO MANTENIMIENTO VALUES ('08014635','807-0');
+INSERT INTO MANTENIMIENTO VALUES ('08052981','311-4');
+INSERT INTO MANTENIMIENTO VALUES ('08054529','512-8');
+INSERT INTO MANTENIMIENTO VALUES ('08051758','519-6');
+-----------------------------------------FIN DE INSERT MANTENIMIENTO----------------------------------------------------
 
 --7)Creando la tabla RECEPCIONISTA
 CREATE TABLE RECEPCIONISTA
@@ -94,6 +198,12 @@ CONSTRAINT PK_RECEP PRIMARY KEY (DNI),
 CONSTRAINT FK_EmpRecep FOREIGN KEY (DNI) REFERENCES EMPLEADO(DNI)
 )
 
+-----------------------------------------INSERT RECEPCIONISTA----------------------------------------------------
+INSERT INTO RECEPCIONISTA VALUES ('08018255', '6940757597');
+INSERT INTO RECEPCIONISTA VALUES ('08017383', '3188782314');
+INSERT INTO RECEPCIONISTA VALUES ('95874412', '7382873870');
+INSERT INTO RECEPCIONISTA VALUES ('36051495', '2418790134');
+-----------------------------------------FIN DE INSERT RECEPCIONISTA----------------------------------------------------
 
 --8)Creando la tabla INSTRUCTOR
 CREATE TABLE INSTRUCTOR
@@ -105,6 +215,23 @@ CONSTRAINT PK_INSTRUCTOR PRIMARY KEY (DNI),
 CONSTRAINT FK_EmpInstructor FOREIGN KEY (DNI) REFERENCES EMPLEADO(DNI)
 )
 
+-----------------------------------------INSERT INSTRUCTOR----------------------------------------------------
+INSERT INTO INSTRUCTOR VALUES ('08012274', 'Aerobicos');
+INSERT INTO INSTRUCTOR VALUES ('08019211', 'Cardio');
+INSERT INTO INSTRUCTOR VALUES ('08011022', 'Yoga');
+INSERT INTO INSTRUCTOR VALUES ('08017242', 'Funcional');
+INSERT INTO INSTRUCTOR VALUES ('08014366', 'Aerobicos');
+INSERT INTO INSTRUCTOR VALUES ('08015953', 'Yoga');
+INSERT INTO INSTRUCTOR VALUES ('08012085', 'Danza');
+INSERT INTO INSTRUCTOR VALUES ('08012932', 'Aerobico');
+INSERT INTO INSTRUCTOR VALUES ('08050535', 'Aerobicos');
+INSERT INTO INSTRUCTOR VALUES ('08059688', 'Cardio');
+INSERT INTO INSTRUCTOR VALUES ('08057257', 'Weightlift');
+INSERT INTO INSTRUCTOR VALUES ('08056509', 'Funcional');
+INSERT INTO INSTRUCTOR VALUES ('00177875', 'Aerobicos');
+INSERT INTO INSTRUCTOR VALUES ('18310799', 'Danza');
+INSERT INTO INSTRUCTOR VALUES ('94123049', 'Aerobico');
+-----------------------------------------FIN DE INSERT INSTRUCTOR----------------------------------------------------
 
 --9)Creando la tabla PERSONAL ASEO
 CREATE TABLE PERSONAL_ASEO
@@ -116,6 +243,12 @@ CONSTRAINT PK_ASEO PRIMARY KEY (DNI),
 CONSTRAINT FK_EmpAseo FOREIGN KEY (DNI) REFERENCES EMPLEADO(DNI)
 )
 
+-----------------------------------------INSERT PERSONAL_ASEO----------------------------------------------------
+INSERT INTO PERSONAL_ASEO VALUES ('08019019', '70400');
+INSERT INTO PERSONAL_ASEO VALUES ('08010976', '93063');
+INSERT INTO PERSONAL_ASEO VALUES ('62598916', '04796');
+INSERT INTO PERSONAL_ASEO VALUES ('85985463', '07371');
+-----------------------------------------FIN DE INSERT PERSONAL_ASEO----------------------------------------------------
 
 --10)Creando la tabla MASAJISTA
 CREATE TABLE MASAJISTA
@@ -127,6 +260,13 @@ CONSTRAINT PK_MASAJISTA PRIMARY KEY (DNI),
 CONSTRAINT FK_EmpMasajista FOREIGN KEY (DNI) REFERENCES EMPLEADO(DNI)
 )
 
+-----------------------------------------INSERT MASAJISTA----------------------------------------------------
+INSERT INTO MASAJISTA VALUES ('08013535', 'Deportivo');
+INSERT INTO MASAJISTA VALUES ('08016512', 'Quiromasaj');
+INSERT INTO MASAJISTA VALUES ('05585862', 'Terapeutic');
+INSERT INTO MASAJISTA VALUES ('28693468', 'Deportivo');
+INSERT INTO MASAJISTA VALUES ('32322835', 'Quiromasaje');
+-----------------------------------------FIN DE INSERT MASAJISTA----------------------------------------------------
 
 --11)Creando la tabla HERRAMIENTAS MANTENIMIENTO
 CREATE TABLE HERRAMIENTAS_MANTENIMIENTO
@@ -155,7 +295,7 @@ CREATE TABLE PRODUCTO
 CodigoPro        VARCHAR(10),
 Nombre_Producto  VARCHAR(50) NOT NULL,
 Material         VARCHAR(10) NOT NULL,
-Marco            VARCHAR(10) NOT NULL,
+Marca            VARCHAR(10) NOT NULL,
 Precio           FLOAT NOT NULL,
 
 CONSTRAINT PK_PRODUCTO PRIMARY KEY (CodigoPro),
