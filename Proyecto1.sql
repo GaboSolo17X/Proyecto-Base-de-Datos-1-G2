@@ -1081,3 +1081,30 @@ INSERT INTO SUMINISTRA VALUES ('07', 'P18');
 INSERT INTO SUMINISTRA VALUES ('08', 'P19');
 INSERT INTO SUMINISTRA VALUES ('09', 'P20');
 -----------------------------------------FIN INSERT SUMMINISTRA----------------------------------------------------
+
+------------------Consultas ------------------------------------------------------------------------------------------------------
+
+--¿Qué cantidad de ventas se ha realizado en efectivo y tarjeta?
+SELECT Forma_de_Pago, COUNT(*) AS "Cantidad de ventas"
+FROM FACTURA 
+GROUP BY Forma_de_Pago;
+
+--¿Cuál es el valor total de las ventas realizadas por efectivo y tarjeta?
+SELECT Forma_de_Pago, SUM(Total) AS "Total"
+FROM FACTURA
+GROUP BY Forma_de_Pago;
+
+--¿Cuáles son los productos más vendidos en la tienda del gimnasio?
+SELECT DETALLE_FACTURA.CodigoPro,SUM(DETALLE_FACTURA.Cantidad) AS "Cantidad Total Vendida"
+FROM DETALLE_FACTURA 
+--INNER JOIN PRODUCTO
+--ON DETALLE_FACTURA.CodigoPro = PRODUCTO.CodigoPro
+GROUP BY DETALLE_FACTURA.CodigoPro
+ORDER BY "Cantidad Total Vendida" DESC;
+
+
+--¿Cuál es el nombre y caja asignada de cada recepcionista?
+SELECT EMPLEADO.Nombre1,EMPLEADO.Nombre2, RECEPCIONISTA.Caja
+FROM EMPLEADO
+INNER JOIN RECEPCIONISTA
+ON EMPLEADO.DNI = RECEPCIONISTA.DNI;
