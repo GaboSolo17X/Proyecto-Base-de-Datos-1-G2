@@ -280,6 +280,15 @@ CONSTRAINT PK_HERRMAN PRIMARY KEY (DNI,Herramientas),
 CONSTRAINT FK_MantHerramientas FOREIGN KEY (DNI) REFERENCES MANTENIMIENTO(DNI)
 )
 
+-----------------------------------------INSERT HERRAMIENTAS_MANTENIMIENTO----------------------------------------------------
+INSERT INTO HERRAMIENTAS_MANTENIMIENTO VALUES('08018007','Llave Inglesa');
+INSERT INTO HERRAMIENTAS_MANTENIMIENTO VALUES('08017137','Clavo Acero');
+INSERT INTO HERRAMIENTAS_MANTENIMIENTO VALUES('08014635','Martillo');
+INSERT INTO HERRAMIENTAS_MANTENIMIENTO VALUES('08054529','Taladro');
+INSERT INTO HERRAMIENTAS_MANTENIMIENTO VALUES('08051758','Cincel');
+INSERT INTO HERRAMIENTAS_MANTENIMIENTO VALUES('08052981','Desarmador');
+-----------------------------------------FIN DE INSERT HERRAMIENTAS_MANTENIMIENTO----------------------------------------------------
+
 --12)Creando la tabla PRODUCTOS ASEO
 CREATE TABLE PRODUCTOS_ASEO
 (
@@ -290,6 +299,14 @@ CONSTRAINT PK_PRODASEO PRIMARY KEY (DNI,Prod_Aseo),
 CONSTRAINT FK_AseoProd FOREIGN KEY (DNI) REFERENCES PERSONAL_ASEO(DNI)
 )
 
+-----------------------------------------INSERT PRODUCTOS_ASEO----------------------------------------------------
+INSERT INTO PRODUCTOS_ASEO VALUES('08019019', 'Cloro');
+INSERT INTO PRODUCTOS_ASEO VALUES('08010976', 'Escoba');
+INSERT INTO PRODUCTOS_ASEO VALUES('62598916', 'Guantes Latex');
+INSERT INTO PRODUCTOS_ASEO VALUES('85985463', 'Trapeador');
+INSERT INTO PRODUCTOS_ASEO VALUES('08010976', 'Franela Tela');
+INSERT INTO PRODUCTOS_ASEO VALUES('85985463', 'Jabon');
+-----------------------------------------FIN DE INSERT PRODUCTOS_ASEO----------------------------------------------------
 
 --13)Creando la tabla PRODUCTO
 CREATE TABLE PRODUCTO
@@ -672,7 +689,18 @@ CONSTRAINT FK_MaquiClase FOREIGN KEY (IdClase) REFERENCES CLASE(IdClase),
 CONSTRAINT FK_MaquiSucu FOREIGN KEY (IdSucursal) REFERENCES SUCURSAL(Id_Sucursal)
 )
 
-
+----------------------------------------------------INSERT DE MAQUINARIA------------------------------------------------------------------
+INSERT INTO MAQUINARIA VALUES ('MQ01', 10, 'Cardio', 'Bien', 'Caminadora EX', 'S1Z-0700', 'SUC01' );
+INSERT INTO MAQUINARIA VALUES ('MQ02', 13, 'Spinnig', 'Regular', 'Bicicleta RO', 'S1Z-0700', 'SUC01' );
+INSERT INTO MAQUINARIA VALUES ('MQ03', 7, 'Pesas', 'Mal', 'Prensa', 'S1Z-0700', 'SUC02' );
+INSERT INTO MAQUINARIA VALUES ('MQ04', 5, 'Spinnig', 'Mal', 'Eliptica', 'S1Z-0700', 'SUC01' );
+INSERT INTO MAQUINARIA VALUES ('MQ05', 20, 'Pesas', 'Bien', 'Paralelas', 'S1Z-0700', 'SUC02' );
+INSERT INTO MAQUINARIA VALUES ('MQ06', 6, 'Cardio', 'Mal', 'Stepper', 'S1Z-0700', 'SUC01' );
+INSERT INTO MAQUINARIA VALUES ('MQ07', 12, 'Cardio', 'Bien', 'Remo', 'S1Z-0700', 'SUC02' );
+INSERT INTO MAQUINARIA VALUES ('MQ08', 7, 'Pesas', 'Regular', 'Banco Press', 'S1Z-0700', 'SUC02' );
+INSERT INTO MAQUINARIA VALUES ('MQ09', 3, 'Cardio', 'Regular', 'Escaladora', 'S1Z-0700', 'SUC01' );
+INSERT INTO MAQUINARIA VALUES ('MQ010', 18, 'Spinning', 'Bien', 'Bicicleta Estatica', 'S1Z-0700', 'SUC02' );
+----------------------------------------------------FIN DE INSERT DE MAQUINARIA------------------------------------------------------------------
 
 --24)Creando la tabla EMPLEADO REPARA MAQUINA
 CREATE TABLE EMP_REPARA_MAQUINARIA
@@ -687,7 +715,14 @@ CONSTRAINT FK_RepEmp FOREIGN KEY (DniEmpleado) REFERENCES MANTENIMIENTO(DNI),
 CONSTRAINT FK_RepMaq FOREIGN KEY (IdMaquinaria) REFERENCES MAQUINARIA(IDmaquina)
 )
 
-
+----------------------------------------------------INSERT DE EMP_REPARA_MAQUINARIA------------------------------------------------------------------
+INSERT INTO EMP_REPARA_MAQUINARIA VALUES('08018007','MQ02','02/JUN/2021');
+INSERT INTO EMP_REPARA_MAQUINARIA VALUES('08017137','MQ03','12/MAY/2021');
+INSERT INTO EMP_REPARA_MAQUINARIA VALUES('08014635','MQ04','23/SEP/2021');
+INSERT INTO EMP_REPARA_MAQUINARIA VALUES('08052981','MQ06','15/OCT/2021');
+INSERT INTO EMP_REPARA_MAQUINARIA VALUES('08054529','MQ08','01/FEB/2022');
+INSERT INTO EMP_REPARA_MAQUINARIA VALUES('08051758','MQ09','30/JAN/2022');
+----------------------------------------------------FIN DE INSERT DE EMP_REPARA_MAQUINARIA------------------------------------------------------------------
 
 --25)Creando la tabla CLIENTE RECIBE CLASES
 CREATE TABLE CLIENTE_RECIBE_CLASES
@@ -1045,8 +1080,14 @@ CONSTRAINT FK_OfrServ FOREIGN KEY (IdServicio) REFERENCES SERVICIO(Id_Servicio),
 CONSTRAINT FK_OfrSucu FOREIGN KEY (IdSucursal) REFERENCES SUCURSAL(Id_Sucursal)
 )
 
-
-
+----------------------------------------------------INSERT DE OFRECE_SERVICIO--------------------------------------------------------------------------
+INSERT INTO OFRECE_SERVICIO VALUES('2','SUC01');
+INSERT INTO OFRECE_SERVICIO VALUES('4','SUC02');
+INSERT INTO OFRECE_SERVICIO VALUES('5','SUC01');
+INSERT INTO OFRECE_SERVICIO VALUES('6','SUC02');
+INSERT INTO OFRECE_SERVICIO VALUES('7','SUC01');
+INSERT INTO OFRECE_SERVICIO VALUES('8','SUC02');
+----------------------------------------------------FIN INSERT DE OFRECE_SERVICIO-----------------------------------------------------------------------
 
 --33)Creando la tabla SUMINISTRA
 CREATE TABLE SUMINISTRA
