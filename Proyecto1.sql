@@ -1,3 +1,11 @@
+--Gimnasio Grupo#2
+
+--Gabriel Omar Solorzano Oliva-20201000915
+--Jennebier Esther Alvarado LÃ³pez-20191000717
+--Melissa Karina Diaz Andino-20091004645
+--Yashua Daniel Fajardo RamÃ­rez-20191000917
+--Incaivi Brandon Lazo MartÃ­nez-20191001993
+
 --1)Creando la tabla SUCURSAL
 CREATE TABLE SUCURSAL
 (
@@ -1230,17 +1238,17 @@ INSERT INTO SUMINISTRA VALUES ('09', 'P20');
 SELECT*FROM SUMINISTRA;
 ------------------Consultas ------------------------------------------------------------------------------------------------------
 
---¿Qué cantidad de ventas se ha realizado en efectivo y tarjeta?
+--Â¿QuÃ© cantidad de ventas se ha realizado en efectivo y tarjeta?
 SELECT Forma_de_Pago, COUNT(*) AS "Cantidad de ventas"
 FROM FACTURA 
 GROUP BY Forma_de_Pago;
 
---¿Cuál es el valor total de las ventas realizadas por efectivo y tarjeta?
+--Â¿CuÃ¡l es el valor total de las ventas realizadas por efectivo y tarjeta?
 SELECT Forma_de_Pago, SUM(Total) AS "Total"
 FROM FACTURA
 GROUP BY Forma_de_Pago;
 
---¿Cuáles son los productos más vendidos en la tienda del gimnasio?
+--Â¿CuÃ¡les son los productos mÃ¡s vendidos en la tienda del gimnasio?
 WITH CANTIDAD_PROD AS(
 SELECT DETALLE_FACTURA.CodigoPro AS Codigo,SUM(DETALLE_FACTURA.Cantidad) AS "Cantidad Total Vendida"
 FROM DETALLE_FACTURA 
@@ -1250,26 +1258,26 @@ ON CPRO.Codigo=PRO.CodigoPro
 ORDER BY "Cantidad Total Vendida" DESC;
 
 
---¿Cuál es el nombre y caja asignada de cada recepcionista?
+--Â¿CuÃ¡l es el nombre y caja asignada de cada recepcionista?
 SELECT EMPLEADO.Nombre1,EMPLEADO.Nombre2, RECEPCIONISTA.Caja
 FROM EMPLEADO
 INNER JOIN RECEPCIONISTA
 ON EMPLEADO.DNI = RECEPCIONISTA.DNI;
 
---¿Cuál es la factura de menor valor que se ha facturado?
+--Â¿CuÃ¡l es la factura de menor valor que se ha facturado?
 SELECT NUM_FACTURA, FECHA, TOTAL
 FROM FACTURA
 WHERE TOTAL =(
     SELECT MIN( TOTAL )
     FROM FACTURA);
     
---¿Cuál es el producto de mayor valor que se vende en el gimnasio?
+--Â¿CuÃ¡l es el producto de mayor valor que se vende en el gimnasio?
 --Eliminar esta consulta?
 SELECT NOMBRE_PRODUCTO, PRECIO
 FROM PRODUCTO
 WHERE PRECIO =(SELECT MAX(PRECIO) FROM PRODUCTO);
 
---¿Cuál es el producto de mayor valor disponible para la venta y cuántos se han vendido en una sola factura?
+--Â¿CuÃ¡l es el producto de mayor valor disponible para la venta y cuÃ¡ntos se han vendido en una sola factura?
 --Contiene a la consulta anterior
 SELECT PRODUCTO.NOMBRE_PRODUCTO, PRODUCTO.PRECIO, PRODUCTO.CODIGOPRO, DETALLE_FACTURA.CANTIDAD, DETALLE_FACTURA.NUM_FACTURA
 FROM PRODUCTO
@@ -1277,12 +1285,12 @@ INNER JOIN DETALLE_FACTURA
 ON PRODUCTO.CODIGOPRO = DETALLE_FACTURA.CODIGOPRO
 WHERE PRECIO =(SELECT MAX(PRECIO) FROM PRODUCTO);
 
---¿Cuantos productos de proteina hay disponibles en el gimnasio?
+--Â¿Cuantos productos de proteina hay disponibles en el gimnasio?
 SELECT COUNT(NOMBRE_PRODUCTO) CANT_PROTEINAS, COUNT(DISTINCT MARCA) MARCAS
 FROM PRODUCTO
 WHERE NOMBRE_PRODUCTO LIKE '%Proteina%';
 
---¿Cuáles son las 5 membresías más baratas que cuesten entre 500 y 600LPS?
+--Â¿CuÃ¡les son las 5 membresÃ­as mÃ¡s baratas que cuesten entre 500 y 600LPS?
 SELECT IDMEMBRESIA, PRECIO
 FROM MEMBRESIA
 WHERE
@@ -1290,10 +1298,10 @@ ROWNUM < 6 AND
 PRECIO BETWEEN '500.00' AND '600.00'
 ORDER BY PRECIO ASC;
 
---¿Cuales son los nombres de los clientes que tienen membresias regulares?
+--Â¿Cuales son los nombres de los clientes que tienen membresias regulares?
 
 
---¿Cuales son los nombres de los empleados que son Personal Aseo y su debido producto de limpieza?
+--Â¿Cuales son los nombres de los empleados que son Personal Aseo y su debido producto de limpieza?
 SELECT EMP.Dni, EMP.Nombre1,EMP.Apellido1, PRODA.Prod_Aseo FROM EMPLEADO EMP INNER JOIN PERSONAL_ASEO PA 
 ON EMP.DNI=PA.DNI
 INNER JOIN PRODUCTOS_ASEO PRODA
@@ -1302,7 +1310,7 @@ WHERE EMP.Tipo_Empleado LIKE '%Personal a%';
 
 
 
---Número de maquinas clasificadas por su uso 
-SELECT MAQ.Uso, COUNT(*) AS "Total de máquinas en estado Fatal"
+--NÃºmero de maquinas clasificadas por su uso 
+SELECT MAQ.Uso, COUNT(*) AS "Total de mÃ¡quinas en estado Fatal"
 FROM MAQUINARIA MAQ
 GROUP BY MAQ.Uso
