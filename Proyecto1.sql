@@ -1182,3 +1182,17 @@ WHERE
 ROWNUM < 6 AND
 PRECIO BETWEEN '500.00' AND '600.00'
 ORDER BY PRECIO ASC;
+
+--¿Cuales son los nombres de los clientes que tienen membresias regulares?
+SELECT CL.Nombre1,MEN.IdMembresia FROM CLIENTE CL INNER JOIN MENSUALIDAD MEN 
+ON CL.DniCliente=MEN.DNI_Cliente
+INNER JOIN MEMBRESIA_REGULAR MEMR
+ON MEN.IdMembresia=MEMR.IdMembresia
+ORDER BY MEN.IdMembresia ASC
+
+--¿Cuales son los nombres de los empleados que son Personal Aseo y su debido producto de limpieza?
+SELECT EMP.Dni, EMP.Nombre1,EMP.Apellido1, PRODA.Prod_Aseo FROM EMPLEADO EMP INNER JOIN PERSONAL_ASEO PA 
+ON EMP.DNI=PA.DNI
+INNER JOIN PRODUCTOS_ASEO PRODA
+ON PA.DNI=PRODA.DNI
+WHERE EMP.Tipo_Empleado LIKE '%Personal a%'
