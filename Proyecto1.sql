@@ -1314,3 +1314,20 @@ WHERE EMP.Tipo_Empleado LIKE '%Personal a%';
 SELECT MAQ.Uso, COUNT(*) AS "Total de máquinas en estado Fatal"
 FROM MAQUINARIA MAQ
 GROUP BY MAQ.Uso
+
+
+--¿Qué indicaciones requieren las maquinas de ejecicio con base en su estado?
+SELECT Uso,
+CASE MAQ.Estado 
+WHEN 'Fatal' THEN 'Descargar inventario, comprar una nueva'
+WHEN 'Regular' THEN 'Reevaluar y dar mantenimimento'
+ELSE 'Buen estado'
+END AS INDICACIONES
+FROM MAQUINARIA MAQ;
+
+--¿Cuántos tipos de productos clasificados por marca superan los 113,000 lempiras en stock?
+SELECT Marca, COUNT(*) AS "Cantidad de productos"
+FROM PRODUCTO
+GROUP BY Marca
+HAVING sum(Precio*Cantidad) > 113000
+ORDER BY "Cantidad de productos" DESC;
