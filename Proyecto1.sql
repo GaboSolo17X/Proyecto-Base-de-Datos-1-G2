@@ -109,7 +109,7 @@ insert into EMPLEADO_PERMANENTE values ('08052981', 10100.40);
 insert into EMPLEADO_PERMANENTE values ('08054529', 10250.10);
 insert into EMPLEADO_PERMANENTE values ('08051758', 10250.10);
 ----------------------------------------------------FIN DE INSERT DE EMPLEADOS PERMANENTESSELECT*FROM SUCURSAL;
-SELECT*FROM EMPLEADO_PERMANENTE;
+SELECT * FROM EMPLEADO_PERMANENTE;
 
 --4)Creando la tabla EMPLEADO POR CONTRATO
 CREATE TABLE EMPLEADO_POR_CONTRATO
@@ -193,7 +193,7 @@ INSERT INTO MANTENIMIENTO VALUES ('08052981','311-4');
 INSERT INTO MANTENIMIENTO VALUES ('08054529','512-8');
 INSERT INTO MANTENIMIENTO VALUES ('08051758','519-6');
 -----------------------------------------FIN DE INSERT MANTENIMIENTO----------------------------------------------------
-SELECT*FROM MANTENIMIENTO;
+SELECT * FROM MANTENIMIENTO;
 
 --7)Creando la tabla RECEPCIONISTA
 CREATE TABLE RECEPCIONISTA
@@ -276,7 +276,7 @@ INSERT INTO MASAJISTA VALUES ('08013535', 'Deportivo');
 INSERT INTO MASAJISTA VALUES ('08016512', 'Quiromasaj');
 INSERT INTO MASAJISTA VALUES ('05585862', 'Terapeutic');
 INSERT INTO MASAJISTA VALUES ('28693468', 'Deportivo');
-INSERT INTO MASAJISTA VALUES ('32322835', 'Quiromasaje');
+INSERT INTO MASAJISTA VALUES ('32322835', 'Quiromasaj');
 -----------------------------------------FIN DE INSERT MASAJISTA----------------------------------------------------
 SELECT*FROM MASAJISTA;
 
@@ -328,32 +328,34 @@ Nombre_Producto  VARCHAR(50) NOT NULL,
 Material         VARCHAR(10) NOT NULL,
 Marca            VARCHAR(10) NOT NULL,
 Precio           FLOAT NOT NULL,
+Cantidad         INT NOT NULL,
 
 CONSTRAINT PK_PRODUCTO PRIMARY KEY (CodigoPro),
-CONSTRAINT CHK_Precio CHECK (Precio>0)
+CONSTRAINT CHK_Precio CHECK (Precio>0),
+CONSTRAINT CHK_CantidadPro CHECK (Cantidad>0)
 )
 
 -----------------------------------------INSERT PRODUCTO----------------------------------------------------
-INSERT INTO PRODUCTO VALUES ('P1', 'Calmante muscular', 'crema', 'Sabon', '150');
-INSERT INTO PRODUCTO VALUES ('P2', 'Aceite de ducha', 'aceite', 'Sabon', '200');
-INSERT INTO PRODUCTO VALUES ('P3', 'Jabon de cuerpo', 'jabon', 'Sabon', '300');
-INSERT INTO PRODUCTO VALUES ('P4', 'Exfoliante corporal', 'crema', 'Sabon', '300');
-INSERT INTO PRODUCTO VALUES ('P5', 'Gel de ducha sport', 'jabon', 'Etnia', '250');
-INSERT INTO PRODUCTO VALUES ('P6', 'Fragancia corporal', 'perfume', 'Etnia', '350');
-INSERT INTO PRODUCTO VALUES ('P7', 'Crema hidratante', 'crema', 'Neutrogena', '400');
-INSERT INTO PRODUCTO VALUES ('P8', 'Crema para afeitar', 'crema', 'Neutrogena', '200');
-INSERT INTO PRODUCTO VALUES ('P9', 'Exfoliante corporal', 'crema', 'Neutrogena', '350');
-INSERT INTO PRODUCTO VALUES ('P10', 'Crema de ducha', 'crema', 'Body Natur', '280');
-INSERT INTO PRODUCTO VALUES ('P11', 'Locion facial', 'perfume', 'ASH', '300');
-INSERT INTO PRODUCTO VALUES ('P12', 'Exfoliante facial', 'crema', 'ASH', '350');
-INSERT INTO PRODUCTO VALUES ('P13', 'Exfoliante corporal', 'crema', 'ASH', '450');
-INSERT INTO PRODUCTO VALUES ('P14', 'Proteina', 'huevo', 'Ovofull', '500');
-INSERT INTO PRODUCTO VALUES ('P15', 'Proteina instantanea', 'carne', 'Ovofull', '600');
-INSERT INTO PRODUCTO VALUES ('P16', 'Proteina instantanea Plus', 'Carne', 'Ovofull', '800');
-INSERT INTO PRODUCTO VALUES ('P17', 'Proteina', 'huevo', 'Weider', '550');
-INSERT INTO PRODUCTO VALUES ('P18', 'Proteina premium', 'carne', 'Weider', '850');
-INSERT INTO PRODUCTO VALUES ('P19', 'Proteina Micelle', 'carne', 'Casein', '550');
-INSERT INTO PRODUCTO VALUES ('P20', 'Proteina en batido', 'frutas', 'Vikika', '700');
+INSERT INTO PRODUCTO VALUES ('P1', 'Calmante muscular', 'crema', 'Sabon', '150', 80);
+INSERT INTO PRODUCTO VALUES ('P2', 'Aceite de ducha', 'aceite', 'Sabon', '200', 80);
+INSERT INTO PRODUCTO VALUES ('P3', 'Jabon de cuerpo', 'jabon', 'Sabon', '300', 80);
+INSERT INTO PRODUCTO VALUES ('P4', 'Exfoliante corporal', 'crema', 'Sabon', '300', 80);
+INSERT INTO PRODUCTO VALUES ('P5', 'Gel de ducha sport', 'jabon', 'Etnia', '250', 80);
+INSERT INTO PRODUCTO VALUES ('P6', 'Fragancia corporal', 'perfume', 'Etnia', '350', 85);
+INSERT INTO PRODUCTO VALUES ('P7', 'Crema hidratante', 'crema', 'Neutrogena', '400', 80);
+INSERT INTO PRODUCTO VALUES ('P8', 'Crema para afeitar', 'crema', 'Neutrogena', '200', 81);
+INSERT INTO PRODUCTO VALUES ('P9', 'Exfoliante corporal', 'crema', 'Neutrogena', '350', 80);
+INSERT INTO PRODUCTO VALUES ('P10', 'Crema de ducha', 'crema', 'Body Natur', '280', 80);
+INSERT INTO PRODUCTO VALUES ('P11', 'Locion facial', 'perfume', 'ASH', '300', 80);
+INSERT INTO PRODUCTO VALUES ('P12', 'Exfoliante facial', 'crema', 'ASH', '350', 80);
+INSERT INTO PRODUCTO VALUES ('P13', 'Exfoliante corporal', 'crema', 'ASH', '450', 80);
+INSERT INTO PRODUCTO VALUES ('P14', 'Proteina', 'huevo', 'Ovofull', '500', 80);
+INSERT INTO PRODUCTO VALUES ('P15', 'Proteina instantanea', 'carne', 'Ovofull', '600', 80);
+INSERT INTO PRODUCTO VALUES ('P16', 'Proteina instantanea Plus', 'Carne', 'Ovofull', '800', 80);
+INSERT INTO PRODUCTO VALUES ('P17', 'Proteina', 'huevo', 'Weider', '550',93);
+INSERT INTO PRODUCTO VALUES ('P18', 'Proteina premium', 'carne', 'Weider', '850',93);
+INSERT INTO PRODUCTO VALUES ('P19', 'Proteina Micelle', 'carne', 'Casein', '550',93);
+INSERT INTO PRODUCTO VALUES ('P20', 'Proteina en batido', 'frutas', 'Vikika', '700',93);
 -----------------------------------------FIN INSERT PRODUCTO----------------------------------------------------
 SELECT*FROM PRODUCTO;
 
@@ -1296,7 +1298,7 @@ SELECT EMP.Dni, EMP.Nombre1,EMP.Apellido1, PRODA.Prod_Aseo FROM EMPLEADO EMP INN
 ON EMP.DNI=PA.DNI
 INNER JOIN PRODUCTOS_ASEO PRODA
 ON PA.DNI=PRODA.DNI
-WHERE EMP.Tipo_Empleado LIKE '%Personal a%'
+WHERE EMP.Tipo_Empleado LIKE '%Personal a%';
 
 
 
