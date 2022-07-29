@@ -1331,3 +1331,7 @@ FROM PRODUCTO
 GROUP BY Marca
 HAVING sum(Precio*Cantidad) > 113000
 ORDER BY "Cantidad de productos" DESC;
+
+--¿Cuales son los nombres,y el tipo de contrato que tienen los empleados de recepcion e instructor de todas las sucursales?
+SELECT EMP.Nombre1,EMP.Apellido1,EMP.Tipo_Empleado,EMP.Tipo_Laboral, EMP.IdSucursal FROM EMPLEADO EMP WHERE EMP.Tipo_Empleado IN('Instructor','Recepcion') 
+ORDER BY Nombre1 ASC
