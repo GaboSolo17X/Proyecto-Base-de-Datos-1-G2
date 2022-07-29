@@ -1335,3 +1335,10 @@ ORDER BY "Cantidad de productos" DESC;
 --¿Cuales son los nombres,y el tipo de contrato que tienen los empleados de recepcion e instructor de todas las sucursales?
 SELECT EMP.Nombre1,EMP.Apellido1,EMP.Tipo_Empleado,EMP.Tipo_Laboral, EMP.IdSucursal FROM EMPLEADO EMP WHERE EMP.Tipo_Empleado IN('Instructor','Recepcion') 
 ORDER BY Nombre1 ASC
+
+--¿Cuales son los nombres de los clientes que tienen membresias regulares?
+SELECT CL.Nombre1,CL.Apellido1,MEM.IdMembresia FROM CLIENTE CL INNER JOIN MEMBRESIA MEM 
+ON CL.DniCliente=MEM.DNI_Cliente
+INNER JOIN MEMBRESIA_REGULAR MEMR
+ON MEM.IdMembresia=MEMR.IdMembresia
+ORDER BY MEM.IdMembresia ASC
