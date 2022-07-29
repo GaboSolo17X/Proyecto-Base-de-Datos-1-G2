@@ -1270,15 +1270,8 @@ FROM FACTURA
 WHERE TOTAL =(
     SELECT MIN( TOTAL )
     FROM FACTURA);
-    
---¿Cuál es el producto de mayor valor que se vende en el gimnasio?
---Eliminar esta consulta?
-SELECT NOMBRE_PRODUCTO, PRECIO
-FROM PRODUCTO
-WHERE PRECIO =(SELECT MAX(PRECIO) FROM PRODUCTO);
-
+   
 --¿Cuál es el producto de mayor valor disponible para la venta y cuántos se han vendido en una sola factura?
---Contiene a la consulta anterior
 SELECT PRODUCTO.NOMBRE_PRODUCTO, PRODUCTO.PRECIO, PRODUCTO.CODIGOPRO, DETALLE_FACTURA.CANTIDAD, DETALLE_FACTURA.NUM_FACTURA
 FROM PRODUCTO
 INNER JOIN DETALLE_FACTURA
@@ -1297,8 +1290,6 @@ WHERE
 ROWNUM < 6 AND
 PRECIO BETWEEN '500.00' AND '600.00'
 ORDER BY PRECIO ASC;
-
---¿Cuales son los nombres de los clientes que tienen membresias regulares?
 
 
 --¿Cuales son los nombres de los empleados que son Personal Aseo y su debido producto de limpieza?
