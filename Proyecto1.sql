@@ -1,10 +1,3 @@
---Gimnasio Grupo#2
-
---Gabriel Omar Solorzano Oliva-20201000915
---Jennebier Esther Alvarado López-20191000717
---Melissa Karina Diaz Andino-20091004645
---Yashua Daniel Fajardo Ramírez-20191000917
---Incaivi Brandon Lazo Martínez-20191001993
 
 --1)Creando la tabla SUCURSAL
 CREATE TABLE SUCURSAL
